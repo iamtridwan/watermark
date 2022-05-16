@@ -1,0 +1,55 @@
+.footer {
+  background-color: #2d3047;
+  font-family: Bai Jamjuree;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-top {
+  padding-top: 50px;
+  padding-bottom:100px;
+}
+.footer-link {
+  width: 100%;
+}
+.footer-link a {
+  display: block;
+  margin: 25px 0;
+}
+.footer-top .footer-link a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer p {
+  font-size: 18px;
+  font-family: Bai Jamjuree;
+  font-weight: 700;
+  color: #2d3047;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+
+  .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+  }
+  .footer-link a {
+    display: inline;
+    margin: 0;
+  }
+}

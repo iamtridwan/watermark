@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import "./footerLogo.css"
 
-const footerLogo = () => {
+const FooterLogo = () => {
   return (
-    <div>footerLogo</div>
-  )
+    <div className="foot-logo">
+      <small>WM</small>
+      <h2>Removal</h2>
+    </div>
+  );
 }
 
-export default footerLogo
+export default FooterLogo

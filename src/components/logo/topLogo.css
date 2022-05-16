@@ -1,0 +1,30 @@
+.top-logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.top-logo h2 {
+  font-family: Bai Jamjuree;
+  font-size: 30px;
+  color: #2d3047;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+}
+.top-logo h2::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fca311;
+  top: 9px;
+  left: 3px;
+  z-index: -1;
+}
+
+small {
+  font-family: Bai Jamjuree;
+  font-size: small;
+  font-weight: 700;
+}
