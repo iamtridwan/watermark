@@ -1,6 +1,6 @@
 .footer {
   background-color: #2d3047;
-  font-family: Bai Jamjuree;
+  /* font-family: Bai Jamjuree; */
 }
 
 .footer a {
@@ -26,7 +26,7 @@
 
 .footer p {
   font-size: 18px;
-  font-family: Bai Jamjuree;
+  /* font-family: Bai Jamjuree; */
   font-weight: 700;
   color: #2d3047;
   text-align: center;

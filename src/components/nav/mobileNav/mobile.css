@@ -1,3 +1,7 @@
+.mobile{
+    height: 0;
+    transition:height 1s ease;
+}
 
 .mobile a{
     color: #fff;
