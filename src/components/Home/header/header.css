@@ -16,9 +16,12 @@
 }
 .header_section h1 {
   font-size: 52px;
-  width: 50%;
+  /* width: 50%; */
   text-align: left;
   margin: 0;
+}
+span {
+  display: block;
 }
 
 .header_section p {

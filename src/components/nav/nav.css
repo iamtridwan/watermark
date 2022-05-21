@@ -5,12 +5,18 @@
   width: 100%;
   padding: 15px 0;
   top: 0;
+  z-index: 5;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d3047;
 }
 
 .menu {
