@@ -1,0 +1,121 @@
+.sign-in_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+
+.form-container {
+  width: 80%;
+  background-color: #2d3047;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+}
+#times {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 2%;
+}
+.form-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.form-container p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-container button {
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 80%;
+  margin: 12px auto;
+  display: block;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-family: Bai Jamjuree;
+}
+
+#google {
+  background-color: #fa0c00;
+}
+#fbook {
+  background-color: #3686f7;
+}
+
+.form-container form {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+.form-container form input {
+  width: 90%;
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  margin: 10px 0;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  outline: #fff;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+}
+
+.form-control p {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  cursor: pointer;
+}
+.form-container form button {
+  width: 40%;
+  display: block;
+  cursor: pointer;
+  background: white;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Bai Jamjuree;
+  font-weight: 700;
+  color: #2d3047;
+  margin: 15px auto;
+}
+
+.login_option p {
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  cursor:pointer
+}
+
+p:first-child {
+  color: #3686f7;
+}
+
+.login_option p span {
+  display: inline;
+  color: #3686f7;
+}
+@media screen and (min-width: 768px) {
+  .form-container {
+    width: 30%;
+  }
+}

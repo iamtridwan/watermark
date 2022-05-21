@@ -1,0 +1,26 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid #2d3047;
+  border-left: 5px solid #2d3047;
+  border-right: 5px solid #2d3047;
+  border-radius: 50%;
+  margin-top: 40vh;
+  animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

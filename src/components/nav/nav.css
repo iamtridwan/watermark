@@ -1,0 +1,90 @@
+.navheader {
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  top: 0;
+  z-index: 5;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d3047;
+}
+
+.menu {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-link {
+  padding: 0;
+}
+.menu-link a {
+  display: inline-block;
+  color: #2d3047;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.menu-link a:hover {
+  color: #fca311;
+}
+.menu-btn {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-btn button {
+  font-family: Bai Jamjuree;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+#in {
+  background-color: transparent;
+  color: #2d3047;
+  cursor: pointer;
+}
+#up {
+  background-color: #2d3047;
+  color: white;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.hamburger {
+  background-color: transparent;
+  color: #2d3047;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger:hover {
+  background-color: #fca311;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 77%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .menu {
+    width: 70%;
+  }
+}

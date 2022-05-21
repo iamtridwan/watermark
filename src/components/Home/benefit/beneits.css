@@ -1,0 +1,124 @@
+.benefit_top,
+.benefit_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.benefit_bot {
+  margin: 80px 0;
+}
+
+.benefit_top__left,
+.benefit_bot__left {
+  background-image: url("../../../assets/blur.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  width: 100%;
+  display: flex;
+}
+
+.benefit_top__left .img,
+.benefit_bot__left .img {
+  width: 280px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefit_bot__left .img {
+  width: 200px;
+  height: 180px;
+}
+
+.img1 {
+  background-image: url("../../../assets/mark2.png");
+}
+.img2 {
+  background-image: url("../../../assets/mark1.png");
+  transform: translate(-130px, 60px);
+}
+
+.img_bot1 {
+  background-image: url("../../../assets/mark3.png");
+  margin-top: 100px;
+  margin-right: -120px;
+  z-index: 2;
+}
+.img_bot2 {
+  background-image: url("../../../assets/mark4.png");
+  margin-top: 50px;
+  margin-right: -110px;
+  z-index: 1;
+}
+.img_bot3 {
+  background-image: url("../../../assets/mark5.png");
+}
+
+.benefit_top .benefit_summary {
+  margin-top: 20px;
+}
+
+.benefit_summary {
+  width: 100%;
+  color: #2d3047;
+}
+
+.benefit_summary h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.benefit_summary p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.benefit_summary button {
+  border: none;
+  color: #fca311;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit_top,
+  .benefit_bot {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .benefit_top__left,
+  .benefit_bot__left {
+    width: 50%;
+  }
+  .benefit_top__left .img,
+  .benefit_bot__left .img {
+    width: 380px;
+    height: 250px;
+  }
+  .benefit_bot__left .img {
+    width: 400px;
+    height: 280px;
+  }
+
+  .benefit_top .benefit_summary {
+    margin-top: 0px;
+  }
+  .benefit_summary {
+    width: 50%;
+  }
+  .benefit_summary h2 {
+    font-size: 36px;
+  }
+  .benefit_summary p {
+    font-size: 20px;
+  }
+  .benefit_summary button {
+    font-size: 22px;
+  }
+}

@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
-// import Layout from "./components/Layout";
-
+import "./App.css";
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Integrate = lazy(() => import("./pages/Integrate"));

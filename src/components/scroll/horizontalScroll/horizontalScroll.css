@@ -1,0 +1,46 @@
+.scroll {
+  padding: 80px 0;
+}
+
+.scroll p {
+  color: #2d3047;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 5%;
+}
+
+.scroll-container {
+  background-color: #f3f5ff;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+.scroll-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin: 0 auto;
+  animation: horizontalSlide 6s linear 0.65s infinite;
+}
+
+.scroll-box img {
+  width: 20%;
+  height: fit-content;
+  margin: auto;
+}
+
+@keyframes horizontalSlide {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -90%;
+  }
+}
