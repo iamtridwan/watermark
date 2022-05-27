@@ -1,5 +1,5 @@
-import React from 'react';
-import "./footerLogo.css"
+import React from "react";
+import "./footerLogo.css";
 
 const FooterLogo = () => {
   return (
@@ -8,6 +8,6 @@ const FooterLogo = () => {
       <h2>Removal</h2>
     </div>
   );
-}
+};
 
-export default FooterLogo
+export default FooterLogo;

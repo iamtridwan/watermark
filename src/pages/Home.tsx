@@ -8,7 +8,6 @@ import HorizontalScroll from "../components/scroll/horizontalScroll/HorizontalSc
 const Bounce = require("react-reveal/Bounce");
 const Zoom = require("react-reveal/Zoom");
 
-
 const Home = () => {
   return (
     <>
@@ -19,9 +18,9 @@ const Home = () => {
         <Integration />
       </Bounce>
       <Zoom>
-      <Carousel />
+        <Carousel />
       </Zoom>
-      <Bounce  left>
+      <Bounce left>
         <Updates />
       </Bounce>
     </>

@@ -6,13 +6,14 @@ import TopLogo from "../logo/TopLogo";
 import "./nav.css";
 import MobileNav from "./mobileNav/MobileNav";
 import SignIn from "../common/form/signIn/SignIn";
+import SignUp from "../common/form/signup/SignUp";
 
 const Nav = () => {
   const [mobile, setMobile] = useState(false);
   const [size, setSize] = useState(window.innerWidth);
   const [mobileNav, setMobileNav] = useState(false);
-  const [showLogin, setShowLogin] = useState(false)
-  const [showRegister, setShowRegister] = useState(false)
+  const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
 
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
@@ -40,7 +41,7 @@ const Nav = () => {
           <Link to="/">
             <TopLogo />
           </Link>
-          {!mobile ? (
+          {!mobile && (
             <div className="menu">
               <ul className="menu-link">
                 <NavLink
@@ -86,7 +87,8 @@ const Nav = () => {
                 </button>
               </div>
             </div>
-          ) : (
+          )}
+          {mobile && (
             <button className="hamburger" onClick={handleMobileNav}>
               <GiHamburgerMenu />
             </button>
@@ -95,7 +97,7 @@ const Nav = () => {
         {mobileNav && <MobileNav height={mobileNav ? "150px" : "0px"} />}
       </SpacedContainer>
       {showLogin && <SignIn setIsHidden={() => setShowLogin(!showLogin)} />}
-      {/* {showRegister && <SignUp />} */}
+      {showRegister && <SignUp setIsHidden={() => setShowRegister(!showRegister)} />}
     </div>
   );
 };

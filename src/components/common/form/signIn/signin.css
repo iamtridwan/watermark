@@ -11,7 +11,7 @@
 }
 
 .form-container {
-  width: 80%;
+  width: 88%;
   background-color: #2d3047;
   padding: 10px;
   color: white;
@@ -42,7 +42,7 @@
   font-weight: 500;
   cursor: pointer;
   width: 80%;
-  margin: 12px auto;
+  margin: 10px auto;
   display: block;
   border: none;
   padding: 10px;
@@ -66,7 +66,7 @@
 .form-container form input {
   width: 90%;
   display: block;
-  padding: 12px;
+  padding: 10px;
   font-size: 18px;
   margin: 10px 0;
   border: 2px solid #fff;
@@ -91,12 +91,12 @@
   display: block;
   cursor: pointer;
   background: white;
-  padding: 15px;
+  padding: 10px;
   font-size: 18px;
   font-family: Bai Jamjuree;
   font-weight: 700;
   color: #2d3047;
-  margin: 15px auto;
+  margin: 12px auto;
 }
 
 .login_option p {
@@ -114,6 +114,23 @@ p:first-child {
   display: inline;
   color: #3686f7;
 }
+
+.form-check{
+  display: flex;
+  align-items: center;
+}
+.form-check input{
+  width: 8%!important;
+}
+.form-check-para, .form-check-para span{
+  font-size: 12px;
+  display: inline !important;
+}
+
+.form-check-para span{
+  cursor: pointer !important;
+}
+
 @media screen and (min-width: 768px) {
   .form-container {
     width: 30%;

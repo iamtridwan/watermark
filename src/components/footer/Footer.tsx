@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SpacedContainer from "../common/SpacedContainer";
-import FooterLogo from "../logo/FooterLogo";
+import FooterLogo from "./footerLogo/FooterLogo";
 import "./footer.css";
 
 const Footer = () => {
