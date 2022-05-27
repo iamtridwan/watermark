@@ -14,8 +14,9 @@ const Magic = () => {
         <Bounce left>
           <h1>How The Magic Happens</h1>
         </Bounce>
-        <Bounce bottom>
-          <div className="magic-container">
+
+        <div className="magic-container">
+          <Bounce bottom>
             <div className="how-container check">
               <img src={Check} alt="check" />
               <p>
@@ -30,6 +31,8 @@ const Magic = () => {
                 brainstorming on your design process
               </p>
             </div>
+          </Bounce>
+          <Bounce bottom>
             <div className="how-container download">
               <img src={Download} alt="download" />
               <p>
@@ -44,7 +47,9 @@ const Magic = () => {
                 village people about us
               </p>
             </div>
-          </div>
+          </Bounce>
+        </div>
+        <Bounce duration="3000">
           <button>Remove Watermark</button>
         </Bounce>
       </div>
