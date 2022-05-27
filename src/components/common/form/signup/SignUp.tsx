@@ -35,7 +35,7 @@ const SignIn = ({ setIsHidden }: Props) => {
     <Zoom>
       <div className="sign-in_form">
         <div className="form-container">
-          <div onClick={setIsHidden} id="times">
+          <div onClick={setIsHidden} id="times" style={{marginTop: "30px"}}>
             <FaTimes />
           </div>
           <h2>Create An Account For Limitless Images Processing</h2>
