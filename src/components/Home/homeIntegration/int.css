@@ -42,6 +42,7 @@
   background-color: #f3f5ff;
   border-radius: 30px;
   padding: 10px 8px;
+  margin-bottom: 12px;
 }
 
 .int_img p {
@@ -66,4 +67,10 @@
   .int_img {
     flex-direction: row;
   }
+  .int_img__1,
+.int_img__2,
+.int_img__3 {
+
+  margin-bottom: 0px;
+}
 }

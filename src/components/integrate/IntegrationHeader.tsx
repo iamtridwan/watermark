@@ -1,4 +1,5 @@
 import React from "react";
+import "./int-header.css"
 const Fade = require("react-reveal/Fade");
 const IntegrationHeader = () => {
   return (
@@ -13,7 +14,6 @@ const IntegrationHeader = () => {
 const intStyle = {
   height: "308px",
   backgroundColor: "#FFE2B1",
-  fontSize: "30px",
   color: "#2D3047",
   display: "flex",
   alignItems: "center",

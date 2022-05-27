@@ -1,0 +1,21 @@
+.int-header{
+  height: "308px";
+  background-color: "#FFE2B1";
+  color: "#2D3047";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  margin-bottom: "150vh",
+};
+
+.int-header h1{
+  font-size: 24px;
+}
+
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 36px;
+    }
+    
+}

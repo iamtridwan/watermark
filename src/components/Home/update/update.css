@@ -12,6 +12,9 @@
 .update h2 {
   font-weight: 700;
   font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 form {
@@ -42,7 +45,6 @@ form button {
   .update h2 {
     font-size: 24px;
     width: 40%;
-    text-align: center;
   }
 
   form {

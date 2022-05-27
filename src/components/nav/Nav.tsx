@@ -94,7 +94,7 @@ const Nav = () => {
             </button>
           )}
         </div>
-        {mobileNav && <MobileNav height={mobileNav ? "150px" : "0px"} />}
+        {mobileNav && <MobileNav height={mobileNav ? "200px" : "0px"} showSignIn={() => setShowLogin(!showLogin)} showSignUp={() => setShowRegister(!showRegister)} hideNav={() => handleMobileNav()} />}
       </SpacedContainer>
       {showLogin && <SignIn setIsHidden={() => setShowLogin(!showLogin)} />}
       {showRegister && <SignUp setIsHidden={() => setShowRegister(!showRegister)} />}
