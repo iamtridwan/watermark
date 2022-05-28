@@ -1,12 +1,13 @@
 .upload-header {
   background-color: #2d3047;
-  height: 560px;
+  height: fit-content;
   color: #fff;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 80px;
+  padding-bottom: 10px;
 }
 
 .header-content {
@@ -15,6 +16,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
+  /* margin-top: 80px; */
 }
 .header-left p {
   color: #fff !important;
@@ -146,8 +148,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .upload-header {
+    height: 560px;
+    padding-bottom: 0px;
+  }
   .header-content {
     flex-direction: row;
+    margin-top: 0px;
   }
   .header-left {
     width: 48%;
