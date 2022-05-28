@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./box.css";
 import Chat from "../../../assets/chat.png";
 import Mess from "../../../assets/mess.png";
@@ -6,6 +7,7 @@ const Fade = require("react-reveal/Fade");
 const Bounce = require("react-reveal/Bounce");
 
 const ContactBox = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="contact-box">
@@ -24,9 +26,7 @@ const ContactBox = () => {
           </div>
         </Fade>
       </div>
-      <Bounce bottom>
-        <button id="contact-btn">Remove Watermark</button>
-      </Bounce>
+        <button id="contact-btn" onClick={() => navigate("/upload")}>Remove Watermark</button>
     </>
   );
 };

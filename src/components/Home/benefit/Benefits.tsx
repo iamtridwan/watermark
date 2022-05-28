@@ -22,7 +22,7 @@ const Benefits = (props: Props) => {
               cupidatat esse esse commodo eu ullamco. Tempor enim labore velit
               irure irure ex cillum deserunt labore ea fugiat pariatur.{" "}
             </p>
-            <button onClick={() => navigate("/removewater")}>
+            <button onClick={() => navigate("/upload")}>
               Remove Watermark
             </button>
           </div>
@@ -35,7 +35,7 @@ const Benefits = (props: Props) => {
               cupidatat esse esse commodo eu ullamco. Tempor enim labore velit
               irure irure ex cillum deserunt labore ea fugiat pariatur.{" "}
             </p>
-            <button onClick={() => navigate("/removewater")}>
+            <button onClick={() => navigate("/upload")}>
               Remove Watermark
             </button>
           </div>

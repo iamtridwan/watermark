@@ -9,9 +9,7 @@ const Contact = () => {
     <>
     <ContactHeader />
     <ContactBox />
-    <Bounce left>
     <Updates />
-    </Bounce>
     </>
   )
 }
