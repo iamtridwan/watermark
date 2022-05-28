@@ -2,21 +2,22 @@ import React from "react";
 import "./magic.css";
 import Check from "../../../assets/check.png";
 import Download from "../../../assets/download.png";
+
+import { useNavigate } from "react-router-dom";
 import Lift from "../../../assets/lift.png";
 import Smiley from "../../../assets/smiley.png";
 import SpacedContainer from "../../common/SpacedContainer";
-const Bounce = require("react-reveal/Bounce");
+const Fade = require("react-reveal/Fade");
+
 
 const Magic = () => {
+  const navigate = useNavigate();
   return (
     <SpacedContainer>
       <div className="how-magic">
-        <Bounce left>
           <h1>How The Magic Happens</h1>
-        </Bounce>
-
         <div className="magic-container">
-          <Bounce bottom>
+          <Fade bottom>
             <div className="how-container check">
               <img src={Check} alt="check" />
               <p>
@@ -31,8 +32,8 @@ const Magic = () => {
                 brainstorming on your design process
               </p>
             </div>
-          </Bounce>
-          <Bounce bottom>
+          </Fade>
+          <Fade bottom>
             <div className="how-container download">
               <img src={Download} alt="download" />
               <p>
@@ -47,11 +48,10 @@ const Magic = () => {
                 village people about us
               </p>
             </div>
-          </Bounce>
+          </Fade>
         </div>
-        <Bounce duration="3000">
-          <button>Remove Watermark</button>
-        </Bounce>
+          <button onClick={() => navigate("/upload")}>Remove Watermark</button>
+ 
       </div>
     </SpacedContainer>
   );

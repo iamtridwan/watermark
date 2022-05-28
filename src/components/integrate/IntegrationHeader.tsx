@@ -1,12 +1,12 @@
 import React from "react";
 import "./int-header.css"
-const Fade = require("react-reveal/Fade");
+const Pulse = require("react-reveal/Pulse");
 const IntegrationHeader = () => {
   return (
     <div style={intStyle}>
-      <Fade left>
+      <Pulse left>
         <h1>Integration & APIs</h1>
-      </Fade>
+      </Pulse>
     </div>
   );
 };

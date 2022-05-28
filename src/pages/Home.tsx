@@ -5,7 +5,7 @@ import Header from "../components/Home/header/Header";
 import Integration from "../components/Home/homeIntegration/Integration";
 import Updates from "../components/Home/update/Updates";
 import HorizontalScroll from "../components/scroll/horizontalScroll/HorizontalScroll";
-const Bounce = require("react-reveal/Bounce");
+const Fade = require("react-reveal/Fade");
 const Zoom = require("react-reveal/Zoom");
 
 const Home = () => {
@@ -14,15 +14,14 @@ const Home = () => {
       <Header />
       <HorizontalScroll />
       <Benefits />
-      <Bounce bottom>
+      <Fade bottom>
         <Integration />
-      </Bounce>
+      </Fade>
       <Zoom>
         <Carousel />
       </Zoom>
-      <Bounce left>
-        <Updates />
-      </Bounce>
+
+      <Updates />
     </>
   );
 };

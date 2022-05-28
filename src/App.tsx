@@ -7,9 +7,11 @@ const Integrate = lazy(() => import("./pages/Integrate"));
 const How = lazy(() => import("./pages/How"));
 const Loading = lazy(() => import("./components/Loading"));
 const Layout = lazy(() => import("./components/Layout"));
+const Uploads = lazy(() => import("./pages/Uploads"));
+const Result = lazy(() => import("./pages/Result"));
 
 function App() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
@@ -18,12 +20,22 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="integrate" element={<Integrate />} />
           <Route path="how" element={<How />} />
-          <Route path="*" element={
-            <div>
-              <p>Sorry this is a dead end</p>
-              <button onClick={() => navigate("/")}>Back to home</button>
-            </div>
-          } />
+          <Route
+            path="*"
+            element={
+              <div style={{ color: "#2D3047", fontSize: "18px" }}>
+                <p>Sorry this is a dead end</p>
+                <button
+                  onClick={() => navigate("/")}
+                  style={{ background: "#2D3047", color: "white" }}
+                >
+                  Back to home
+                </button>
+              </div>
+            }
+          />
+          <Route path="/upload" element={ <Uploads />} />
+          <Route path="/result" element={ <Result />} />
         </Route>
       </Routes>
     </Suspense>
@@ -31,4 +43,3 @@ function App() {
 }
 
 export default App;
-
