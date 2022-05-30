@@ -23,7 +23,7 @@ function App() {
           <Route
             path="*"
             element={
-              <div style={{ color: "#2D3047", fontSize: "18px" }}>
+              <div style={{ color: "#2D3047", fontSize: "18px", marginTop: "80px" }}>
                 <p>Sorry this is a dead end</p>
                 <button
                   onClick={() => navigate("/")}
