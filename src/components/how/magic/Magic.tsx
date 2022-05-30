@@ -1,11 +1,11 @@
 import React from "react";
 import "./magic.css";
-import Check from "../../../assets/check.png";
-import Download from "../../../assets/download.png";
+import CheckGif from "../../../assets/gifs/CheckGif.gif";
+import DownloadedGif from "../../../assets/gifs/DownloadedGif.gif";
 
 import { useNavigate } from "react-router-dom";
-import Lift from "../../../assets/lift.png";
-import Smiley from "../../../assets/smiley.png";
+import liftGif from "../../../assets/gifs/liftGif.gif";
+import SmileyGif from "../../../assets/gifs/smilyGif.gif";
 import SpacedContainer from "../../common/SpacedContainer";
 const Fade = require("react-reveal/Fade");
 
@@ -19,14 +19,14 @@ const Magic = () => {
         <div className="magic-container">
           <Fade bottom>
             <div className="how-container check">
-              <img src={Check} alt="check" />
+              <img src={DownloadedGif} alt="check" />
               <p>
                 Upload your Watermarked Images by clicking Remove Watermark
                 Button
               </p>
             </div>
             <div className="how-container lift">
-              <img src={Lift} alt="lift" />
+              <img src={liftGif} alt="lift" />
               <p>
                 Allow our APIs to do the heavy lifting while you continue
                 brainstorming on your design process
@@ -35,14 +35,14 @@ const Magic = () => {
           </Fade>
           <Fade bottom>
             <div className="how-container download">
-              <img src={Download} alt="download" />
+              <img src={CheckGif} alt="download" />
               <p>
                 Download your high quality Image after our APIs succesfully
                 remove all the watermarks
               </p>
             </div>
             <div className="how-container smiley">
-              <img src={Smiley} alt="smiley" />
+              <img src={SmileyGif} alt="smiley" />
               <p>
                 Enjoy the rest of your day and don’t forget to tell even your
                 village people about us

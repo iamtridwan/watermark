@@ -29,8 +29,8 @@
 }
 
 .contact img {
-  width: 50%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
 
@@ -41,44 +41,74 @@
   text-align: center;
 }
 
-#contact-btn{
-    display: block;
-    width: 70%;
-    margin: 50px auto;
-    border: 2px solid #2d3047;
-    background-color: transparent;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: Bai Jamjuree;
-    cursor: pointer;
+#contact-btn {
+  display: block;
+  width: 70%;
+  margin: 50px auto;
+  border: 2px solid #2d3047;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Bai Jamjuree;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .contact-box {
-    width: 60%;
+    width: 80%;
     transform: translateY(-50px);
     flex-direction: row;
     margin: 0 auto;
   }
 
   .contact {
-  width: 350px;
-  height: 250px;
-  margin-bottom: 0px;
-}
+    width: 250px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
 
   .contact h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact p {
     width: 80%;
     margin: 10px auto;
   }
 
- #contact-btn{
+  #contact-btn {
     width: 30%;
     padding: 15px;
+  }
 }
 
+@media screen and (min-width: 991px) {
+  .contact-box {
+    width: 70%;
+    transform: translateY(-50px);
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .contact {
+    width: 300px;
+    height: 320px;
+    margin-bottom: 0px;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .contact-box {
+    width: 60%;
+  }
+
+  .contact {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 0px;
+  }
 }

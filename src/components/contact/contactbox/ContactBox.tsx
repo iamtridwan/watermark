@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./box.css";
-import Chat from "../../../assets/chat.png";
-import Mess from "../../../assets/mess.png";
+import ChatGif from "../../../assets/Contactgif/ChatGif.gif";
+import MessGif from "../../../assets/Contactgif/MessageGif.gif";
 const Fade = require("react-reveal/Fade");
 const Bounce = require("react-reveal/Bounce");
 
@@ -13,14 +13,14 @@ const ContactBox = () => {
       <div className="contact-box">
         <Fade bottom>
           <div className="contact">
-            <img src={Mess} alt="chat icon" />
+            <img src={MessGif} alt="chat icon" />
             <h4>Chat with customer care service</h4>
             <p>
               We reply to our customers in less than 2 min of initiating chat.
             </p>
           </div>
           <div className="contact">
-            <img src={Chat} alt="message icon" />
+            <img src={ChatGif} alt="message icon" />
             <h4>Message Us</h4>
             <p>We will reply you back within 2 working days.</p>
           </div>

@@ -9,8 +9,8 @@ import SignIn from "../common/form/signIn/SignIn";
 import SignUp from "../common/form/signup/SignUp";
 
 const Nav = () => {
-  const [mobile, setMobile] = useState(false);
-  const [size, setSize] = useState(window.innerWidth);
+  // const [mobile, setMobile] = useState(false);
+  // const [size, setSize] = useState(window.innerWidth);
   const [mobileNav, setMobileNav] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -19,20 +19,20 @@ const Nav = () => {
     setMobileNav(!mobileNav);
   };
 
-  const checkSize = () => {
-    setSize(window.innerWidth);
-    if (size < 768) {
-      setMobile(true);
-    }
-    if (size >= 768) {
-      setMobile(false);
-    }
-  };
+  // const checkSize = () => {
+  //   setSize(window.innerWidth);
+  //   if (size < 768) {
+  //     setMobile(true);
+  //   }
+  //   if (size >= 768) {
+  //     setMobile(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", checkSize);
-    return () => window.removeEventListener("resize", checkSize);
-  }, [size]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", checkSize);
+  //   return () => window.removeEventListener("resize", checkSize);
+  // }, [size]);
 
   return (
     <div className="navheader">
@@ -41,7 +41,6 @@ const Nav = () => {
           <Link to="/">
             <TopLogo />
           </Link>
-          {!mobile && (
             <div className="menu">
               <ul className="menu-link">
                 <NavLink
@@ -87,12 +86,9 @@ const Nav = () => {
                 </button>
               </div>
             </div>
-          )}
-          {mobile && (
             <button className="hamburger" onClick={handleMobileNav}>
               <GiHamburgerMenu />
             </button>
-          )}
         </div>
         {mobileNav && <MobileNav height={mobileNav ? "200px" : "0px"} showSignIn={() => setShowLogin(!showLogin)} showSignUp={() => setShowRegister(!showRegister)} hideNav={() => handleMobileNav()} />}
       </SpacedContainer>
