@@ -23,19 +23,37 @@ function App() {
           <Route
             path="*"
             element={
-              <div style={{ color: "#2D3047", fontSize: "18px", marginTop: "80px" }}>
+              <div
+                style={{
+                  color: "#2D3047",
+                  fontSize: "18px",
+                  margin: "80px auto",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  
+                }}
+              >
                 <p>Sorry this is a dead end</p>
                 <button
                   onClick={() => navigate("/")}
-                  style={{ background: "#2D3047", color: "white" }}
+                  style={{
+                    background: "#2D3047",
+                    color: "white",
+                    padding: "15px",
+                    fontSize: "20px",
+                    border: "none",
+                    cursor: "pointer"
+                  }}
                 >
                   Back to home
                 </button>
               </div>
             }
           />
-          <Route path="/upload" element={ <Uploads />} />
-          <Route path="/result" element={ <Result />} />
+          <Route path="/upload" element={<Uploads />} />
+          <Route path="/result" element={<Result />} />
         </Route>
       </Routes>
     </Suspense>
