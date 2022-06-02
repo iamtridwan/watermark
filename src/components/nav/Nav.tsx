@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
 import SpacedContainer from "../common/SpacedContainer";
 import TopLogo from "../logo/TopLogo";
 import "./nav.css";
@@ -9,8 +10,6 @@ import SignIn from "../common/form/signIn/SignIn";
 import SignUp from "../common/form/signup/SignUp";
 
 const Nav = () => {
-  // const [mobile, setMobile] = useState(false);
-  // const [size, setSize] = useState(window.innerWidth);
   const [mobileNav, setMobileNav] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -18,21 +17,6 @@ const Nav = () => {
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
   };
-
-  // const checkSize = () => {
-  //   setSize(window.innerWidth);
-  //   if (size < 768) {
-  //     setMobile(true);
-  //   }
-  //   if (size >= 768) {
-  //     setMobile(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", checkSize);
-  //   return () => window.removeEventListener("resize", checkSize);
-  // }, [size]);
 
   return (
     <div className="navheader">
@@ -87,7 +71,7 @@ const Nav = () => {
               </div>
             </div>
             <button className="hamburger" onClick={handleMobileNav}>
-              <GiHamburgerMenu />
+              { mobileNav ? < FaTimes /> : <GiHamburgerMenu /> }
             </button>
         </div>
         {mobileNav && <MobileNav height={mobileNav ? "200px" : "0px"} showSignIn={() => setShowLogin(!showLogin)} showSignUp={() => setShowRegister(!showRegister)} hideNav={() => handleMobileNav()} />}

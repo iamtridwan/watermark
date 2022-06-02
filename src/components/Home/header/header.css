@@ -1,7 +1,7 @@
 .header {
   background-color: #2d3047;
   padding: 50px 0;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .header_section {
@@ -54,13 +54,16 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    margin-top: 100px;
+  }
   .header_section {
     flex-direction: row;
   }
-.header_section div {
-  width: 40%;
-  margin-bottom: 0px;
-}
+  .header_section div {
+    width: 40%;
+    margin-bottom: 0px;
+  }
   .header_section img {
     width: 35%;
     height: 35%;
