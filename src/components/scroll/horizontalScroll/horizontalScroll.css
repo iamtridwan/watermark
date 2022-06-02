@@ -6,7 +6,7 @@
   color: #2d3047;
   font-weight: 500;
   font-size: 22px;
-  margin-left: 5%;
+  text-align: center;
 }
 
 .scroll-container {
@@ -30,9 +30,20 @@
 }
 
 .scroll-box img {
+  width: 50%;
+  height: auto;
+  margin-left:30px;
+}
+
+@media screen and (min-width:768px) {
+  .scroll-box img {
   width: 20%;
-  height: fit-content;
-  margin: auto;
+}
+
+.scroll p {
+  text-align: left;
+  margin-left: 5%;
+}
 }
 
 @keyframes horizontalSlide {

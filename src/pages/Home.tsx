@@ -17,9 +17,9 @@ const Home = () => {
       <Fade bottom>
         <Integration />
       </Fade>
-      <Zoom>
+      <Fade bottom>
         <Carousel />
-      </Zoom>
+      </Fade>
 
       <Updates />
     </>

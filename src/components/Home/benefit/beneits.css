@@ -60,6 +60,9 @@
 .benefit_top .benefit_summary {
   margin-top: 20px;
 }
+.benefit_bot .benefit_summary {
+  order: 1;
+}
 
 .benefit_summary {
   width: 100%;
@@ -108,6 +111,10 @@
 
   .benefit_top .benefit_summary {
     margin-top: 0px;
+  }
+
+  .benefit_bot .benefit_summary {
+    order: 0;
   }
   .benefit_summary {
     width: 50%;
