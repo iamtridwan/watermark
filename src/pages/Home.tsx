@@ -17,10 +17,7 @@ const Home = () => {
       <Fade bottom>
         <Integration />
       </Fade>
-      <Fade bottom>
         <Carousel />
-      </Fade>
-
       <Updates />
     </>
   );
