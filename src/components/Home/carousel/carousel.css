@@ -63,6 +63,7 @@
   .testimonial h2 {
     width: 50%;
     font-size: 32px;
+    margin: 0 auto;
   }
 
   .carousel {
